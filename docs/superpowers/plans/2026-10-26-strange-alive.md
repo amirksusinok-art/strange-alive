@@ -23,26 +23,29 @@
 ### Task 1: State and persistence
 Files: public/state.js, tests/state.test.js, package.json.
 Interfaces: createState(now), loadState(storage, now), saveState(storage,state), handleAction(state,action,now), tick(state,seconds), updateEmotion(state), openSecret(state).
-- [ ] Write tests for action stats, spam restriction, secret timing, evolution visits, offline freezing, malformed/denied storage.
-- [ ] Run node --test: observe missing implementation failure.
-- [ ] Implement state module, run tests green, commit.
+- [x] Write tests for action stats, spam restriction, secret timing, evolution visits, offline freezing, malformed/denied storage.
+- [x] Run node --test: observe missing implementation failure.
+- [x] Implement state module, run tests green, commit.
 
 ### Task 2: Playable designed interface
 Files: public/index.html, public/style.css, public/script.js, public/favicon.svg, scripts/serve.mjs, scripts/build.mjs.
 Interfaces: controller consumes Task 1 state API; semantic buttons use data-action.
-- [ ] Build a dark editorial creature habitat: mint creature, four action tiles, speech, progress and log.
-- [ ] Implement timers, cursor eyes, animation, event scheduler, sound, secret scene, details/settings dialogs and storage notices.
-- [ ] Build and check desktop/375/768 layouts, actions, keyboard, dialogs, save/reload, storage denied and reduced motion in real browser.
-- [ ] Run all state tests and build, commit.
+- [x] Build a dark editorial creature habitat: mint creature, four action tiles, speech, progress and log.
+- [x] Implement timers, cursor eyes, animation, event scheduler, sound, secret scene, details/settings dialogs and storage notices.
+- [x] Build and check desktop/375/768 layouts, actions, keyboard, dialogs, save/reload, storage denied and reduced motion in real browser.
+- [x] Run all state tests and build, commit.
 
 ### Task 3: Review and publish
 Files: README.md, render.yaml, .gitignore, docs/verification.md.
-- [ ] Fresh independent code review; resolve important issues with regression checks.
-- [ ] Verify tests, build and browser paths; document evidence.
-- [ ] Create public repository via GitHub fallback if connector cannot create repositories; publish content via GitHub plugin.
-- [ ] Create static site through Render plugin, await live deployment and verify real page/assets.
-- [ ] Record final links and commit published source locally.
+- [x] Fresh independent code review; resolve important issues with regression checks.
+- [x] Verify tests, build and browser paths; document evidence.
+- [x] Create public repository via GitHub fallback if connector cannot create repositories; publish content via GitHub plugin.
+- [x] Create static site through Render plugin, await live deployment and verify real page/assets.
+- [x] Record final links and commit published source locally.
 
 ## Execution ledger
 Ruling: user approved design and instructed Proceed; execute continuously in this existing empty workspace without another plan approval. Native execution; one final independent review.
 Pre-flight: Task 2 consumes pure API from Task 1; Task 3 publishes public/ through build into dist/. Interfaces consistent.
+
+Task 1: complete — state suite 8/8. Task 2: complete — build and 16 local browser journeys passed. Task 3: code review fixed idle regression, source published through GitHub plugin, Render static deployment Live.
+Ruling: public URL browser check blocked by Cloudflare challenge; Render build log and Live status verified instead. No protection bypass attempted; final report must disclose this verification limit.
